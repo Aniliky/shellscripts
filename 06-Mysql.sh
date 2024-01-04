@@ -2,7 +2,7 @@
 
 ID=$(id -u)
 
-if ( $ID -ne 0 )
+if [ $ID -ne 0 ]
 then 
     echo "run this script as root user"
     exit 1
@@ -12,7 +12,7 @@ fi
 
 yum install mysql -y
 
-if ( $? -ne 0 )
+if [ $? -ne 0 ]
 then
     echo "Mysql installation FAILED"
     exit 1
