@@ -10,7 +10,7 @@ else
     echo "root user"
 fi
 
-yum install mysqllk -y
+yum install mysql -y
 
 if [ $? -ne 0 ]
 then
