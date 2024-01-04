@@ -8,6 +8,7 @@ then
     exit 1
 else
     echo "root user"
+fi
 
 yum install mysql -y
 
@@ -17,3 +18,4 @@ then
     exit 1
 else
     echo "Mysql installation SUCCESS"
+fi
