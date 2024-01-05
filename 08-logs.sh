@@ -22,6 +22,7 @@ VALIDATE(){
         echo -e "$2 $G SUCCESS $N"
     fi
 }
+
 if [ $ID -ne 0 ]
 then
     echo "run this script as root user"
@@ -32,8 +33,8 @@ fi
 
 yum install mysql -y &>>LOGFILE
 
-VALIDATE $? "MYSQL INSTALLATION" &>>LOGFILE
+VALIDATE $? "MYSQL INSTALLATION"
 
 yum install git -y &>>LOGFILE
 
-VALIDATE $? "GIT INSTALLATION" &>>LOGFILE
+VALIDATE $? "GIT INSTALLATION"
